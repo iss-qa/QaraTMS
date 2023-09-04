@@ -18,6 +18,9 @@
 - Pull the project from git repository.
 - Create a database named `tms` utf8_general_ci, or you can use SQLite.
 - Rename `.env.backup` file to `.env` and fill the database information.
+- Install SQLITE  - php ini (;extension=sqlite3)c
+extension=pdo_sqlite
+extension=sqlite3
 - Run `composer install` or ```php composer.phar install```
 - Run `php artisan key:generate`
 - Run `php artisan migrate`
@@ -29,6 +32,7 @@
 
 If you are using SQLite:
 
+* Install SQLITE - choco install sqlite
 * Create **database.sqlite** file in **./database** folder
 * Rename `.env_sqlite.backup` file to `.env` and fill the database information.
 
