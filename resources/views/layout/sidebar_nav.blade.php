@@ -10,32 +10,31 @@
 
             <hr>
 
-            <a href="{{route("repository_list_page", $project->id)}}" class="nav-link text-white">
+            <a href="{{route("repository_list_page", $project->id)}}" class="nav-link text-white menu_link">
                 <i class="bi bi-server"></i>
                 {{ __('Repositories') }}
             </a>
 
-            <a href="{{route("test_plan_list_page", $project->id)}}" class="nav-link text-white">
+            <a href="{{route("test_plan_list_page", $project->id)}}" class="nav-link text-white menu_link">
                 <i class="bi bi-journals"></i> {{ __('Test Plans') }}
             </a>
 
 
-            <a href="{{route("test_run_list_page", $project->id)}}" class="nav-link text-white">
+            <a href="{{route("test_run_list_page", $project->id)}}" class="nav-link text-white menu_link">
                 <i class="bi bi-play-circle"></i> {{ __('Test Runs') }}
             </a>
 
 
 
             <a href="{{route("project_documents_list_page", $project->id)}}" class="nav-link text-white">
-                <i class="bi bi-file-text-fill"></i> {{ __(' Documents') }}
+                <i class="bi bi-file-text-fill"></i> {{ __('Documents') }}
             </a>
-
 
             <hr>
         @endif
 
 
-        <a href="{{route("project_list_page")}}" class="nav-link text-white">
+        <a href="{{route("project_list_page")}}" class="nav-link text-white menu_link">
             <i class="bi bi-diagram-3-fill"></i>
             {{ __('All projects') }}
         </a>
